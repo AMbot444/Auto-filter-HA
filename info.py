@@ -74,8 +74,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/AMpvtDiscussion')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Potatochips94")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/HA_Bots')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/AMpvt5')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/AMpvtBackup')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/chkhfyjn')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/HA_Bots")
 
