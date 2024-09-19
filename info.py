@@ -64,7 +64,7 @@ else:
     SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://amitbhati9423:9ct8hr45jNDAHtfO@cluster0.mzeql.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URL = environ.get('DATABASE_URL', "")
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
@@ -75,7 +75,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/AMpvtDiscussion')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Potatochips94")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/HA_Bots')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/HA_Films_World')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/AMpvt5')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/HA_Bots")
 
@@ -119,7 +119,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "https://t.me/AMpvt5")
+URL = environ.get("URL", "")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
