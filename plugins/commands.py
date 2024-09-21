@@ -107,7 +107,7 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
             ]]
-            await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=False)
+            await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
 
     settings = await get_settings(int(mc.split("_", 2)[1]))
@@ -163,7 +163,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file.file_id,
                 caption=f_caption,
-                protect_content=False if await db.has_premium_access(message.from_user.id) else True,
+                protect_content=False if await db.has_premium_access(message.from_user.id) else False,
                 reply_markup=InlineKeyboardMarkup(btn)
             )
             file_ids.append(msg.id)
