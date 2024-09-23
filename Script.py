@@ -128,7 +128,6 @@ I can't find the <b>{}</b> in my database! 🥲
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴘʀɪᴠᴀᴛᴇ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
 - ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ - <a href=https://t.me/AMpvtBackup>ʜᴇʀᴇ</a>
-
 - ᴅᴇᴠʟᴏᴘᴇʀ - @Potatochips94"""
 
     PREMIUM_PLAN_TEXT = """<b><i><u>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - </u>
