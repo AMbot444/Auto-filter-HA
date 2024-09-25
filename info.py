@@ -109,7 +109,7 @@ SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
 PAYMENT_QR = environ.get('PAYMENT_QR', 'http://graph.org/file/cacbbea472e5a48ce0d64.jpg')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'sampleupi@upi')
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'trustme8@ybl')
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', False)
