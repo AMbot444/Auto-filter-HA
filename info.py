@@ -79,6 +79,20 @@ FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/AMpvt5')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/HA_Bots")
 
+# auth_channel means force subscribe channel.
+# if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
+REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set True Or False
+TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
+auth_channel = environ.get('AUTH_CHANNEL', '-1002196411706') # give your force subscribe channel id here else leave it blank
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+reqst_channel = environ.get('REQST_CHANNEL_ID', '')
+REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
+SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
+INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
+
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
