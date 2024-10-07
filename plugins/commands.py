@@ -63,9 +63,7 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-        
-        if AUTH_CHANNEL and not await is_subscribed(client, message):
-        
+          
     if len(message.command) == 2 and message.command[1] == "plans":
         btn = [            
             [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url=OWNER_USERNAME)],
