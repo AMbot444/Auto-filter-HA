@@ -72,7 +72,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/AMpvtDiscussion')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+JNZkTeXrQVs5Yzhl')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Potatochips94")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+HrNn1Ra6LIpjNmM9')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+4RwcR_ifyipiYWQ1')
@@ -80,7 +80,7 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/HA_Bots")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
+DELETE_TIME = int(environ.get('DELETE_TIME', 600)) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 10))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'hindi english telugu tamil kannada malayalam marathi punjabi').split()]
@@ -92,10 +92,10 @@ SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
-PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '3600'))
+PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '600'))
 
 # boolean settings
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
 IS_VERIFY = is_enabled('IS_VERIFY', False)
 AUTO_DELETE = is_enabled('AUTO_DELETE', False)
 WELCOME = is_enabled('WELCOME', False)
