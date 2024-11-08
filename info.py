@@ -45,7 +45,7 @@ else:
     ADMINS = [int(admins) for admins in ADMINS.split()]
 
 # Channels
-INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002165808936 -1002176554096 -1002152453711 -1002155283763').split()]
+INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002165808936 -1002176554096 -1002152453711 -1002155283763 -1002188817889').split()]
 if len(INDEX_CHANNELS) == 0:
     print('Info - INDEX_CHANNELS is empty')
 LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1002223993999')
@@ -73,7 +73,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+JNZkTeXrQVs5Yzhl')
-OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Potatochips94")
+OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/AM_Connect_me_bot")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+HrNn1Ra6LIpjNmM9')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+4RwcR_ifyipiYWQ1')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
